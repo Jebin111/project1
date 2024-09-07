@@ -1,4 +1,5 @@
 import 'package:design/pages/home_page.dart';
+import 'package:design/values/values.dart';
 import 'package:flutter/material.dart';
 import 'values/colour.dart';
 
@@ -12,6 +13,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    width=MediaQuery.of(context).size.width;
+    height=MediaQuery.of(context).size.height;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

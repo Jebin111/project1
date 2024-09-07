@@ -17,12 +17,12 @@ class DetailsPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.grey[500],
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.white),
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-        title: Text('Details', style: TextStyle(color: Colors.white)),
+        title: const Text('Details', style: TextStyle(color: Colors.white)),
       ),
       body: DetailsModel(
         imgPath: imgPath,
